@@ -1,13 +1,16 @@
 package com.yao.yao;
 
 import android.os.Bundle;
+import android.speech.tts.Voice;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MyActivity extends AppCompatActivity {
 
@@ -26,7 +29,18 @@ public class MyActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Button button = (Button) findViewById(R.id.content_my_buttonYao);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Log.d("Yao","2016-07-21 Test");
+            }
+
+        });
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
