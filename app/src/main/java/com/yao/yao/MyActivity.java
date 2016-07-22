@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
 
@@ -30,10 +31,14 @@ public class MyActivity extends AppCompatActivity {
             }
         });
         Button button = (Button) findViewById(R.id.content_my_buttonYao);
+        final EditText editText = (EditText) findViewById(R.id.edit_message);
+
+
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
                 Log.d("Yao","2016-07-21 Test");
+                editText.setText("Button Click !!");
             }
 
         });
